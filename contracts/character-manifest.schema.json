@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAP Character Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "character_id",
+    "display_name",
+    "renderer",
+    "asset_ref",
+    "rights_status",
+    "approval_state"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "character_id": {
+      "type": "string",
+      "minLength": 2
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "renderer": {
+      "enum": [
+        "vrm",
+        "2d",
+        "live2d",
+        "placeholder"
+      ]
+    },
+    "asset_ref": {
+      "type": "string"
+    },
+    "asset_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "rights_status": {
+      "enum": [
+        "synthetic",
+        "licensed",
+        "internal_authorized",
+        "unverified"
+      ]
+    },
+    "approval_state": {
+      "enum": [
+        "draft",
+        "review",
+        "approved"
+      ]
+    },
+    "rights_owner": {
+      "type": "string"
+    },
+    "voice_binding_ref": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "supported_states": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "idle",
+          "listening",
+          "thinking",
+          "speaking",
+          "paused",
+          "error"
+        ]
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

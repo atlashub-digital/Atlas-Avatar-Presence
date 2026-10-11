@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAP Audio Session v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "session_ref",
+    "input_owner",
+    "output_owner",
+    "lip_sync_source",
+    "allow_second_tts"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "session_ref": {
+      "type": "string"
+    },
+    "input_owner": {
+      "enum": [
+        "hermes",
+        "device",
+        "external",
+        "none"
+      ]
+    },
+    "output_owner": {
+      "enum": [
+        "hermes",
+        "external",
+        "none"
+      ]
+    },
+    "lip_sync_source": {
+      "enum": [
+        "agent_audio_stream",
+        "approved_pcm_levels",
+        "system_loopback_poc",
+        "none"
+      ]
+    },
+    "output_device": {
+      "type": "string"
+    },
+    "allow_second_tts": {
+      "const": false
+    },
+    "explicit_mic_consent": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

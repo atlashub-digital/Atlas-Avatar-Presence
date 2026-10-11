@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atlas Avatar Presence · Offline POC</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+ <main class="layout">
+  <section class="intro">
+   <small>AtlasHub.SI / ATLAS AVATAR PRESENCE</small>
+   <h1>Um Expert que ganha presença.</h1>
+   <p>Esta é uma demonstração <strong>100% offline</strong>, com uma personagem sintética 2D. Não está ligada à Helena, ao Hermes, ao OpenClaw nem a dispositivos.</p>
+   <div class="privacy">Microfone desligado por desenho · Sem leitura de ecrã · Sem rede · Sem dados pessoais</div>
+   <form id="chat">
+    <label for="prompt">Fale com o demonstrador (texto)</label>
+    <div class="controls"><input id="prompt" required maxlength="280" placeholder="Ex.: Olá! Conta-me quem és." /><button type="submit">Enviar</button></div>
+   </form>
+   <div class="controls">
+    <button type="button" id="activate">Simular escuta</button>
+    <button type="button" id="stop">Parar animação</button>
+    <button type="button" id="reset">Repor</button>
+   </div>
+   <label class="toggle"><input type="checkbox" id="speech" /> Usar voz sintética local do browser quando disponível (opcional; NÃO é Hermes)</label>
+   <div id="reply" class="reply" aria-live="polite">Escolha uma ação para experimentar.</div>
+  </section>
+  <section class="avatarZone" aria-label="Avatar ilustrativo">
+   <div class="avatarShell">
+    <div id="avatar" class="avatar idle" role="img" aria-label="Personagem 2D sintética representando um assistente digital">
+     <div class="sparkle one"></div><div class="sparkle two"></div>
+     <div class="body"><div class="neck"></div><div class="jacket"></div></div>
+     <div class="head"><div class="hair"></div><div class="face"><span class="eye"></span><span class="eye"></span><span class="mouth"></span></div></div>
+    </div>
+    <div class="pill"><span class="dot"></span><span id="state">idle</span></div>
+    <div class="identity">ATLAS EXPERT · DEMO</div>
+   </div>
+  </section>
+ </main>
+ <script src="./main.js"></script>
+</body>
+</html>

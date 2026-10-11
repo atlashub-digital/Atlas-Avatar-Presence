@@ -1,0 +1,29 @@
+[
+  {
+    "schema_version": "1.0",
+    "event_id": "demo-001",
+    "session_ref": "offline-poc",
+    "event_type": "avatar.state",
+    "occurred_at": "2026-10-10T12:00:00Z",
+    "origin": "user",
+    "state": "listening"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "demo-002",
+    "session_ref": "offline-poc",
+    "event_type": "avatar.state",
+    "occurred_at": "2026-10-10T12:00:02Z",
+    "origin": "agent_adapter",
+    "state": "thinking"
+  },
+  {
+    "schema_version": "1.0",
+    "event_id": "demo-003",
+    "session_ref": "offline-poc",
+    "event_type": "avatar.state",
+    "occurred_at": "2026-10-10T12:00:03Z",
+    "origin": "agent_adapter",
+    "state": "speaking"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAP Avatar Event v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "event_id",
+    "session_ref",
+    "event_type",
+    "occurred_at",
+    "origin"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "session_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "enum": [
+        "avatar.state",
+        "avatar.expression",
+        "voice.level",
+        "session.connected",
+        "session.disconnected",
+        "consent.changed",
+        "agent.turn"
+      ]
+    },
+    "state": {
+      "enum": [
+        "idle",
+        "listening",
+        "thinking",
+        "speaking",
+        "paused",
+        "error"
+      ]
+    },
+    "expression": {
+      "type": "string"
+    },
+    "audio_level": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "origin": {
+      "enum": [
+        "user",
+        "agent_adapter",
+        "voice_adapter",
+        "renderer",
+        "device_bridge"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "number",
+          "boolean",
+          "null"
+        ]
+      }
+    }
+  }
+}

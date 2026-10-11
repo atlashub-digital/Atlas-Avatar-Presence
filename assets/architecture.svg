@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-labelledby="title desc">
+<title id="title">Atlas Avatar Presence architecture</title><desc id="desc">The Avatar UI connects to a neutral session controller; Hermes is the default agent and voice owner. Optional OpenClaw and a mock agent can be selected. Knowledge Hub and Device Bridge remain separate services.</desc>
+<rect width="1200" height="500" rx="25" fill="#0a1628"/>
+<text x="54" y="58" font-size="31" font-weight="bold" font-family="Arial,sans-serif" fill="#f1f7ff">ATLAS AVATAR PRESENCE</text>
+<text x="55" y="91" font-size="16" font-family="Arial,sans-serif" fill="#9cc7de">Visual personality · Voice ownership · Agent portability · v0.1.0</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 Z" fill="#63c9f6"/></marker></defs>
+<rect x="52" y="155" width="236" height="125" rx="14" fill="#152d47" stroke="#5ba2d4" stroke-width="2"/>
+<text x="78" y="196" font-size="22" font-weight="bold" font-family="Arial,sans-serif" fill="#eaf5ff">Avatar UI</text>
+<text x="78" y="225" font-size="15" font-family="Arial,sans-serif" fill="#b4d4e8">Desktop · Web</text>
+<text x="78" y="247" font-size="15" font-family="Arial,sans-serif" fill="#b4d4e8">Face · gestures · captions</text>
+<rect x="366" y="147" width="364" height="145" rx="15" fill="#194d69" stroke="#22cae0" stroke-width="2"/>
+<text x="390" y="188" font-size="23" font-weight="bold" font-family="Arial,sans-serif" fill="#fff">Session Controller</text>
+<text x="390" y="220" font-size="16" font-family="Arial,sans-serif" fill="#b5f1fa">State · Provider · Audio owner</text>
+<text x="390" y="248" font-size="16" font-family="Arial,sans-serif" fill="#b5f1fa">Consent-aware event contracts</text>
+<rect x="815" y="118" width="325" height="80" rx="14" fill="#115e49" stroke="#2bd8aa" stroke-width="2"/>
+<text x="841" y="155" font-size="21" font-weight="bold" font-family="Arial,sans-serif" fill="#eafff5">Hermes (preferred)</text>
+<text x="841" y="180" font-size="15" font-family="Arial,sans-serif" fill="#a9efdb">Agent · memory · optional STT/TTS</text>
+<rect x="815" y="215" width="325" height="69" rx="14" fill="#192e4a" stroke="#658cb9" stroke-width="2"/>
+<text x="841" y="254" font-size="18" font-family="Arial,sans-serif" fill="#d9e7ff">OpenClaw (optional)</text>
+<rect x="815" y="298" width="325" height="69" rx="14" fill="#192e4a" stroke="#658cb9" stroke-width="2"/>
+<text x="841" y="338" font-size="18" font-family="Arial,sans-serif" fill="#d9e7ff">Offline Mock / other runtime</text>
+<path d="M288 215 H364" stroke="#63c9f6" stroke-width="3" marker-end="url(#arr)"/>
+<path d="M730 215 H779 V157 H811 M779 215 V249 H811 M779 215 V334 H811" fill="none" stroke="#63c9f6" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="367" y="356" width="362" height="78" rx="14" fill="#18342e" stroke="#4f9d82" stroke-width="2"/>
+<text x="389" y="387" font-size="19" font-family="Arial,sans-serif" font-weight="bold" fill="#e1fff3">External capabilities</text>
+<text x="389" y="414" font-size="15" font-family="Arial,sans-serif" fill="#abe2cd">Knowledge Hub · Device Bridge</text>
+<path d="M548 292 V353" stroke="#65c9aa" stroke-dasharray="6 7" stroke-width="3"/>
+<text x="53" y="470" fill="#a5b7cc" font-family="Arial,sans-serif" font-size="14">Reference architecture · No real Hermes connection or PC control in v0.1.0.</text>
+</svg>

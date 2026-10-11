@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AAP Agent Profile Binding v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "agent_ref",
+    "runtime",
+    "audio_ownership",
+    "character_ref"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "agent_ref": {
+      "type": "string"
+    },
+    "deployment_ref": {
+      "type": "string"
+    },
+    "runtime": {
+      "enum": [
+        "hermes",
+        "openclaw",
+        "mock",
+        "other"
+      ]
+    },
+    "audio_ownership": {
+      "enum": [
+        "hermes",
+        "external",
+        "none"
+      ]
+    },
+    "character_ref": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "permitted_capabilities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

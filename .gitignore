@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+*.log
+.DS_Store
+private/
+secrets/
+recordings/
+captures/
+*.vrm
+*.vrma
+*.mp3
+*.wav
+*.mp4
